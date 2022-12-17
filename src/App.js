@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
       <navBar>
-        <h1>Hello</h1>
+        <h1>Raneem Aljamal</h1>
       </navBar>
   )
 }

@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
       <navBar>
-        <h1>Hello</h1>
+        <h1>Rana</h1>
       </navBar>
   )
 }

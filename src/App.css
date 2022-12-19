@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+.wrapper {
+  font-family: Raleway;
+  width: 100%;
+  height: 100vh;
+  background-color: #8fc8f4;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* header */
+.cityInput:focus {
+  outline: none ;
+  border-bottom: 1px solid black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cityInput {
+  border: none;
+  height: 50%;
+  background-color: transparent;
+  font-size: 20px;
+  color: white;
+  padding-top: 1%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  width: 98%;
+  height: 65px;
+  background-color:#7290d9;
+  display: flex;
+  gap: 3%;
+  padding: 1%;
+}
+.button {
+  background-color:#5e62c5;
+  border: none;
+  width: 15%;
+  padding: 1%;
+  font-size: 20px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+::placeholder {
+  color: white;
+}
+/* Weather now */
+.mostlycloudy{
+  margin-top: 1%;
+  width: 17%;
+}
+.weather-now{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+  width: 100%;
+}
+.caption1{
   color: white;
+  font-size: 30px;
+  margin-top: -10px;
 }
+.caption2{
+  color: #1d004a;
+  font-size: 32px;
+  display: flex;
+  gap: 10px;
 
-.App-link {
-  color: #61dafb;
 }
+.caption3{
+  color: #1d004a;
+  font-size: 23px;
+  margin-top: -3px;
+  margin-bottom: 100px;
+  display: flex;
+  gap: 15px;
+}
+/* Weather 24 hours */
+.image1{
+  width: 50%;
+}
+.weather{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weather24{
+  display: flex;
+  width: 87%;
+  margin: auto;
+  font-size: 23px;
+  margin-top: -50px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

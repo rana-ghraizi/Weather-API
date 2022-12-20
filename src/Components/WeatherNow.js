@@ -1,12 +1,13 @@
 import React from 'react';
 import Mostlycloudy from "../images/weather-icons/mostlycloudy.svg";
-function WeatherNow(props) {
+
+function WeatherNow({description, temp, humidity, pressure, icon}) {
     return (
         <div className='weather-now'>
-          <img src={Mostlycloudy} className='mostlycloudy' alt='mostly cloudy'/>
-          <p className='caption1'>overcast clouds</p>
-          <p className='caption2'><strong>Temperature</strong> 10&deg; to 11&deg; C</p>
-          <p className='caption3'><strong>Humidity</strong> 78% <strong>Pressure</strong> 1008.48</p>
+          <img src={`http://openweathermap.org/img/wn/${icon}.png`} className='mostlycloudy' alt='mostly cloudy'/>
+          <p className='caption1'>{description }</p>
+          <p className='caption2'><strong>Temperature</strong>{temp.toFixed(0)} °C</p>
+          <p className='caption3'><strong>Humidity</strong> {humidity} % <strong>Pressure</strong> {pressure}</p>
         </div>
     );
 }

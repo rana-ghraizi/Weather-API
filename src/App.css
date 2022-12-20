@@ -80,6 +80,7 @@
 }
 .weather24{
   display: flex;
+  
   width: 87%;
   margin: auto;
   font-size: 23px;
